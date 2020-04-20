@@ -1,0 +1,47 @@
+languages: 
+  locales: 
+    - en_US
+    - ru_RU
+
+# For internal server tracking/counting. When a new server is added to bungee, add it here.
+# However, If a server is removed from bungee, its not necessary to remove it from here.
+# In fact, its advisable not to, as the indices are used in logging and data storage in the database, so removing one may cause issues when reviewing logs.
+# For convenience, this also *should* correlate with port numbers, starting at 25570 + [index number] (excluding 0, which is 25565)
+server-index: 
+  #0 is network
+  1: hub01
+  2: hub02
+  51: uhc01
+  52: uhc02
+  101: blm01
+  102: blm02
+  103: blm03
+  201: mbm01
+  202: mbm02
+  203: mbm03
+  204: mbm04
+  205: mbm05
+
+xp-symbol: '\u272F'
+
+cache-settings:
+   update-interval: 120000
+   flush-interval: 900000
+   lite-mode: false
+
+db:
+  user: user
+  pass: password
+  db: dbname
+  host: localhost
+  port: 3306
+
+muted-blocked-commands:
+  - msg
+  - r
+  - reply
+  - tell
+  - w
+  - whisper
+  - t
+  - helpop
